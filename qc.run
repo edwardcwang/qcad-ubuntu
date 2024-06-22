@@ -1,0 +1,9 @@
+#!/bin/bash
+# Adapted from https://github.com/pixeldexter/qcad-debian/blob/master/qcad.run
+
+QCAD_APP=qcad-bin
+QCAD_LIBDIR=/usr/lib/qcad
+
+export LD_LIBRARY_PATH=${QCAD_LIBDIR}:${LD_LIBRARY_PATH}
+
+exec ${QCAD_LIBDIR}/${QCAD_APP} "$@"

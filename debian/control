@@ -1,0 +1,24 @@
+Source: qcad
+Maintainer: Edward Wang <edward.c.wang@compdigitec.com>
+Section: graphics
+# QCAD as of 2024-06 doesn't properly support Qt6 and is unable to load
+Build-Depends:
+# According to QCAD instructions
+  libglu1-mesa-dev, libfreetype-dev, libfontconfig1-dev, libssl-dev, libdbus-1-dev, libsm-dev,
+# Also needed for build
+  qt5-image-formats-plugins,
+# Qt5
+  qt5-qmake,
+  qtbase5-dev,
+  qtscript5-dev,
+  qttools5-dev,
+  libqt5opengl5-dev,
+  libqt5svg5-dev,
+  libqt5xmlpatterns5-dev
+
+Package: qcad
+Architecture: amd64
+Priority: optional
+Homepage: https://github.com/edwardcwang/qcad-ubuntu
+Description: Unofficial Ubuntu package of QCAD Community Edition.
+Depends: ${shlibs:Depends}, ${misc:Depends}

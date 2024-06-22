@@ -1,0 +1,3 @@
+qcad (0.1) unstable; urgency=low
+  * dummy placeholder changelog to satisfy dpkg-gencontrol
+ -- Edward Wang <edward.c.wang@compdigitec.com>  Sat, 22 Jun 2024 18:33:27 -0400
